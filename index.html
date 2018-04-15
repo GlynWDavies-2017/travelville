@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Travelville</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+</head>
+<body>
+  <!-- Start Navbar Fixed -->
+  <div class="navbar-fixed">
+    <!-- Start Navbar Colour -->
+    <nav class="teal">
+      <!-- Start Container -->
+      <div class="container">
+        <!-- Start Nav Wrapper -->
+        <div class="nav-wrapper">
+          <a href="#home" class="brand-logo">Travelville</a>
+          <!-- Hamburger Menu Icon -->
+          <a href="#" class="button-collapse" data-activates="mobile-nav">
+            <i class="material-icons">menu</i>
+          </a>
+          <!-- Start Menu Links -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#popular">Popular Places</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          <!-- End Menu Links -->
+          </ul>
+        <!-- End Nav Wrapper -->
+        </div>
+      <!-- End Container -->
+      </div>
+    <!-- End Navbar Colour -->
+    </nav>
+  <!-- End Navbar Fixed -->
+  </div>
+  <!-- Start Sidebar Menu -->
+  <ul class="side-nav" id="mobile-nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#search">Search</a></li>
+    <li><a href="#popular">Popular Places</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  <!-- End Sidebar Menu -->
+  </ul>
+  <!-- Start Slider Section -->
+  <section class="slider">
+    <!-- Start Slides -->
+    <ul class="slides">
+      <!-- Start Slide 1 -->
+      <li>
+        <img src="img/resort1.jpg" alt="Resort 1">
+        <div class="caption center-align">
+          <h2>Take Your Dream Vacation</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt magni, est omnis, sapiente nihil unde.
+          </h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      <!-- End Slide 1 -->
+      </li>
+      <!-- Start Slide 2 -->
+      <li>
+        <img src="img/resort2.jpg" alt="Resort 2">
+        <div class="caption left-align">
+          <h2>We Work With All Budgets</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt magni, est omnis, sapiente nihil unde.
+          </h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      <!-- End Slide 2 -->
+      </li>
+      <!-- Start Slide 3 -->
+      <li>
+        <img src="img/resort3.jpg" alt="Resort 3">
+        <div class="caption right-align">
+          <h2>Group And Individual Getaways</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt magni, est omnis, sapiente nihil unde.
+          </h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      <!-- End Slide 3 -->
+      </li>
+    <!-- End Slides -->
+    </ul>
+  <!-- End Slider Section -->
+  </section>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Initialize Side Navigation
+      $('.button-collapse').sideNav();
+      // Initialize Slides
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 5000
+      });
+    });
+  </script>
+</body>
+</html>
